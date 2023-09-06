@@ -3,7 +3,7 @@ function preload() {
 }
 
 //crie a função setup
- function setup {
+ function setup() {
   canvas = createCanvas(640, 480);
   canvas.position(150, 150);
   video = createCapture(VIDEO);
@@ -12,7 +12,7 @@ function preload() {
 
 
 //crie a função draw
-function draw {
+function draw() {
   image(video, 230, 150, 220, 200);
 
   fill(255, 0, 0);
@@ -37,6 +37,6 @@ function draw {
 }
 
 
-function  take_snapshot{
+function  take_snapshot() {
   save('student_name.png');
 }
